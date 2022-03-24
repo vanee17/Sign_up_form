@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+        @media (max-width:640px) {
+            .attribution{
+                display: none;
+            }
+        }
+      </style>
+</head>
+<body>
+    <section class="seccion">
+        <div class="caja1">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable. </p>
+        </div>
+        <div class="caja2">
+            <div><b>Try it free 7 days</b> then $20/mo. thereafter</div>
+            <form name="formulario" id="formulario">
+            <label for="">
+                <input type="text" name="name" placeholder="First Name" id="name" >
+                <p id="aviso_nombre"></p>
+            </label>
+            <br>
+            <label for="">
+            <input type="text" name="last_name" placeholder="Last Name" id="last_name" >
+            <p id="aviso_apellido"></p>
+            </label>
+            <br>
+            <label for="">
+                <input type="email" name="mail" placeholder="Email Address" id="email" >
+                <p id="aviso_correo"></p>
+            </label>
+            <br>
+            <label for="">
+                <input type="password" name="password" placeholder="Password" id="password" >
+                <p id="aviso_contraseña"></p>
+            </label>
+            <br>
+            <button type="button" id="submit" onclick="validacion()">Claim your free trial</button>
+            <br>
+            <span>By clicking the button, you are agreeing to our <b>Terms and Services</b></span>
+        </form>
+        </div>
+    </section>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
